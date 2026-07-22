@@ -8,11 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&family=Recursive:wght@300..900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --amber:        #E8930A;
-    --golden:        #F2B705;
-    --amber-light:   #FEF3E2;
-    --amber-100:     #FDDBA0;
-    --amber-dark:    #C4720A;
+    --accent:        #EDA51A;
+    --accent-light:  #FBEBD1;
+    --accent-dark:   #A66E08;
 
     --navy:          #0C1E35;
     --navy-mid:      #1A3A5C;
@@ -71,12 +69,13 @@
     margin-top: 10px;
   }
 
-  .section-title .accent { color: var(--amber); }
+  .section-title .accent { color: var(--accent); }
 
   .section-intro {
     max-width: 620px;
     color: var(--navy-300);
     font-size: 16px;
+    font-weight: 300;
     margin-top: 16px;
   }
 
@@ -103,7 +102,7 @@
     color: var(--white);
     letter-spacing: 0.01em;
   }
-  .topnav .brand span { color: var(--amber); }
+  .topnav .brand span { color: var(--accent); }
   .topnav-links {
     display: flex;
     gap: 28px;
@@ -114,9 +113,9 @@
     color: rgba(255,255,255,0.65);
     transition: color 0.2s;
   }
-  .topnav-links a:hover { color: var(--golden); }
+  .topnav-links a:hover { color: var(--accent); }
   .topnav-cta {
-    background: var(--golden);
+    background: var(--accent);
     color: var(--navy) !important;
     font-weight: 600;
     font-size: 13px;
@@ -132,7 +131,7 @@
 
   /* ============ HERO ============ */
   .hero {
-    background: var(--navy);
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
     color: var(--white);
     padding: 150px 24px 90px;
     position: relative;
@@ -187,9 +186,9 @@
     margin-top: 18px;
     letter-spacing: -0.01em;
   }
-  .hero h1 .hl { color: var(--amber); }
+  .hero h1 .hl { color: var(--accent); }
   .hero-role {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17px;
     color: rgba(255,255,255,0.7);
     margin-top: 18px;
@@ -205,7 +204,7 @@
     font-family: var(--font-stat);
     font-weight: 900;
     font-variation-settings: 'slnt' -15;
-    color: var(--golden);
+    color: var(--accent);
     font-size: 38px;
     line-height: 1;
   }
@@ -224,7 +223,7 @@
     flex-wrap: wrap;
   }
   .btn-primary {
-    background: var(--golden);
+    background: var(--accent);
     color: var(--navy);
     font-weight: 600;
     font-size: 14px;
@@ -276,7 +275,7 @@
   .hero-photo-tag .dot {
     width: 7px; height: 7px;
     border-radius: 50%;
-    background: var(--golden);
+    background: var(--accent);
     display: inline-block;
     margin-right: 7px;
   }
@@ -321,8 +320,8 @@
     z-index: 2;
   }
   .tl-item.current .tl-dot {
-    border-color: var(--amber);
-    background: var(--amber);
+    border-color: var(--accent);
+    background: var(--accent);
     box-shadow: 0 0 0 4px rgba(232,147,10,0.18);
   }
 
@@ -390,14 +389,14 @@
     margin-top: 5px;
   }
   .tl-company {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     color: var(--navy-300);
     margin-top: 2px;
   }
   .tl-badge.current-badge {
-    background: var(--amber-light);
-    color: var(--amber-dark);
+    background: var(--accent-light);
+    color: var(--accent-dark);
     font-size: 11px;
     font-weight: 600;
     padding: 4px 10px;
@@ -412,7 +411,7 @@
     color: var(--navy-300);
     transition: transform 0.25s;
   }
-  .tl-card.open .tl-chevron { transform: rotate(180deg); color: var(--amber); }
+  .tl-card.open .tl-chevron { transform: rotate(180deg); color: var(--accent); }
 
   .tl-body {
     max-height: 0;
@@ -431,6 +430,7 @@
     position: relative;
     padding-left: 18px;
     font-size: 14.5px;
+    font-weight: 300;
     color: var(--navy);
     margin-bottom: 11px;
     line-height: 1.55;
@@ -441,17 +441,18 @@
     left: 0; top: 8px;
     width: 6px; height: 6px;
     border-radius: 50%;
-    background: var(--amber);
+    background: var(--accent);
   }
   .tl-achieve {
     margin-top: 14px;
-    background: var(--amber-light);
+    background: var(--accent-light);
     border-radius: 8px;
     padding: 12px 16px;
     font-size: 13.5px;
-    color: #7A4200;
+    font-weight: 300;
+    color: var(--accent-dark);
   }
-  .tl-achieve strong { color: var(--amber-dark); }
+  .tl-achieve strong { color: var(--accent-dark); }
 
   /* ============ EXPERTISE / DOMAIN SECTION ============ */
   .expertise-section {
@@ -493,8 +494,8 @@
   }
   .ex-tab:hover { border-color: var(--teal); color: var(--white); }
   .ex-tab.active {
-    background: var(--amber);
-    border-color: var(--amber);
+    background: var(--accent);
+    border-color: var(--accent);
     color: var(--navy);
     font-weight: 600;
   }
@@ -565,13 +566,13 @@
   .cert-icon {
     width: 42px; height: 42px;
     border-radius: 10px;
-    background: var(--amber-light);
+    background: var(--accent-light);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 800;
     font-size: 14px;
-    color: var(--amber-dark);
+    color: var(--accent-dark);
   }
   .cert-badge-img {
     width: 56px;
@@ -580,7 +581,7 @@
   }
   .cert-card.featured .cert-icon {
     background: rgba(242,183,5,0.15);
-    color: var(--golden);
+    color: var(--accent);
   }
   .cert-name {
     font-weight: 700;
@@ -598,6 +599,7 @@
   .cert-card.featured .cert-org { color: var(--teal); }
   .cert-year {
     font-size: 12px;
+    font-weight: 300;
     color: var(--navy-300);
     margin-top: 8px;
   }
@@ -619,6 +621,7 @@
   }
   .edu-school {
     font-size: 13.5px;
+    font-weight: 300;
     color: var(--navy-300);
     margin-top: 4px;
   }
@@ -645,9 +648,10 @@
     font-size: 26px;
     color: var(--white);
   }
-  .footer-head .accent { color: var(--amber); }
+  .footer-head .accent { color: var(--accent); }
   .footer-sub {
     font-size: 14px;
+    font-weight: 300;
     color: rgba(255,255,255,0.55);
     margin-top: 12px;
     max-width: 320px;
@@ -667,7 +671,7 @@
     margin-bottom: 11px;
     transition: color 0.2s;
   }
-  .footer-col a:hover { color: var(--golden); }
+  .footer-col a:hover { color: var(--accent); }
   .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -769,7 +773,7 @@
 <!-- ============ EXPERTISE SECTION ============ -->
 <section class="section expertise-section" id="expertise">
   <span class="eyebrow">Chuyên môn</span>
-  <h2 class="section-title">Năng lực theo <span class="accent" style="color:#F2B705">nhóm chủ đề</span></h2>
+  <h2 class="section-title">Năng lực theo <span class="accent" style="color:var(--accent)">nhóm chủ đề</span></h2>
   <p class="section-intro">Chọn một nhóm để xem các năng lực cụ thể trong nhóm đó.</p>
 
   <div class="expertise-tabs" id="ex-tabs">
