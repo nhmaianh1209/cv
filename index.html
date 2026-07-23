@@ -156,7 +156,7 @@
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.3fr 0.9fr;
+    grid-template-columns: 1.45fr 0.8fr;
     gap: 56px;
     align-items: center;
     position: relative;
@@ -180,7 +180,7 @@
   }
   .hero h1 {
     font-weight: 800;
-    font-size: clamp(34px, 5vw, 52px);
+    font-size: clamp(30px, 4.2vw, 46px);
     line-height: 1.12;
     margin-top: 18px;
     letter-spacing: -0.01em;
@@ -196,24 +196,24 @@
   .hero-role strong { color: var(--white); font-weight: 600; }
   .hero-stats {
     display: flex;
-    gap: 36px;
-    margin-top: 38px;
+    gap: 30px;
+    margin-top: 32px;
   }
   .hero-stat .stat-number {
     font-family: var(--font-stat);
     font-weight: 900;
     font-variation-settings: 'slnt' -15;
     color: var(--accent);
-    font-size: 38px;
+    font-size: 30px;
     line-height: 1;
   }
   .hero-stat .stat-label {
     font-family: var(--font);
     font-weight: 400;
-    font-size: 12.5px;
+    font-size: 11.5px;
     color: rgba(255,255,255,0.55);
     margin-top: 6px;
-    max-width: 110px;
+    max-width: 105px;
   }
   .hero-actions {
     display: flex;
@@ -258,25 +258,15 @@
     border: 1px solid rgba(255,255,255,0.12);
     box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);
   }
-  .hero-photo-tag {
-    position: absolute;
-    bottom: -16px;
-    left: 18px;
-    background: var(--navy-mid);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 9px;
-    padding: 10px 16px;
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(255,255,255,0.85);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-  }
-  .hero-photo-tag .dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-    display: inline-block;
-    margin-right: 7px;
+  .hero-quote {
+    border-left: 3px solid var(--teal);
+    padding-left: 16px;
+    margin-top: 22px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
   }
 
   @media (max-width: 860px) {
@@ -724,8 +714,8 @@
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow">Talent Development · L&amp;OD</div>
-      <h1>Nguyễn Hoàng Mai Anh <span class="hl">(Alex)</span></h1>
+      <div class="hero-eyebrow">Talent Development · Coaching</div>
+      <h1>Nguyễn Hoàng Mai Anh<br><span class="hl">(Alex)</span></h1>
       <p class="hero-role">10+ năm trong Learning &amp; Organization Development — từ tech startup đến tập đoàn xây dựng <strong>~3.500 nhân sự</strong>. Chuyên về competency framework, capability program và phát triển văn hoá tổ chức.</p>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -748,7 +738,7 @@
     </div>
     <div class="hero-photo-wrap">
       <img class="hero-photo" id="hero-photo-el" src="images/hero-photo.png" alt="Mai Anh đang facilitate một buổi training tại Coteccons">
-      <div class="hero-photo-tag"><span class="dot"></span>Learning &amp; Organization Development Team Lead @ Coteccons</div>
+      <div class="hero-quote">"A smooth sea never makes a skilled sailor"</div>
     </div>
   </div>
 </header>
